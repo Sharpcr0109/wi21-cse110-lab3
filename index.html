@@ -9,7 +9,9 @@
 		<main>
 			<h1>Rui Cai's Github Userpage!</h1>
 			<p>Welcome to my userpage again! This time it's in html!</p>
-			<p>Want to checkout my first userpage in Markdown? <a href="https://sharpcr0109.github.io/">Here it is!</a></p>
+			<p>Want to checkout my first userpage in Markdown? <a href="https://sharpcr0109.github.io/" target="_blank">Here it is!</a></p>
+
+			<iframe src="https://sharpcr0109.github.io/" title="my github page in Markdown" height="500" width="1000"></iframe>
 
 			<section>
 				<header>
@@ -19,7 +21,7 @@
 				</header>
 
 				<figure>
-					<img src="ruicai.png" style="width:10%">
+					<img src="ruicai.png" alt="Pic of Me!" width="200">
 					<figcaption>Me on Potato Chip Rock</figcaption>
 				</figure>
 
@@ -28,17 +30,16 @@
 				</p>
 
 				<header>
-					<h2>
+					<h3>
 						Hobbies
-					</h2>
-				</header>>
-				<ol>
+					</h3>
+				</header>
+				<ul>
 					<li>Swimming</li>
 					<li>Badminton</li>
 					<li>Movies</li>
 					<li>Video Games</li>
-					<
-				</ol>
+				</ul>
 
 				<footer>
 					Nice to meet you!
@@ -47,24 +48,88 @@
 
 			</section>
 
+			<hr>
+
 
 			<section>
 				<header>
 					<h2>Education Background</h2>
-				</header>				
+				</header>	
+
 				<aside>
 					<ul>
-						<li>University of California, San Diego</li>
+						<li>
+							<span style="color:blue">University of California, San Diego </span>
+						</li>
 						<li><em>Provost Honors</em></li>
+						<li>Expected to graduate in 12/2022</li>
 					</ul>
 				</aside>
-				
 
+				<div style="color:blue">
+					<img src="ucsd.png" alt="Logo of UCSD" height="100">
+				</div>
 
+				<footer>
+					<strong>Go Tritons!</strong>
+				</footer>
 			</section>
 
-			<h2>This is the header 2</h2>
-			<p> Hmm let me think, what is great about today?</p>
+			<hr>
+
+			<section>
+				<header>
+					<h2>Project</h2>
+				</header>
+
+				<header> 
+					<h3>XPlore UCSD</h3>
+				</header>
+
+				<pre>
+Your personal virtual tour guide for visiting the UC san Diego Campus.<br>
+XPlore UCSD is a mobile application that aims to provide a pleasant, <br>
+easy-to-use, and highly customizable guided touring experience for all tourists <br>
+and prospective students visiting the UC San Diego campus.
+				</pre>
+
+				<nav>
+					<a href="https://apple.co/31RMWDK" target="_blank">XPlore UCSD on App Store</a> |
+					<a href="https://bit.ly/XploreUCSD" target="_blank">XPlore UCSD on Google Play</a>
+				</nav>
+
+				<picture>
+					<source media="(min-width:650px)" srcset="xplore.png">
+					<source media="(min-width:450px)" srcset="ucsd.png">
+					<img src="xplore.png" alt="Logo of XPlore UCSD" width="100">						
+				</picture>
+
+				<p>
+					Using <code><b>SwiftUI</b></code> and <code><b>Android Studio</b></code>, I implemented:
+				</p>
+
+				<ol>
+					<li>
+						<i>Tour page</i>: Users can plan the stops for any tours; users can go front and back to any stops they want
+						within the page, and the page updates itself with corresponding info; link backend JSON files of preset tours to UI; built-in audio player and texts for introduction to the stops.
+					</li>
+					<li>
+						<i>Search page</i>: users can search using my customized algorithm based on name or amenities filter to get the landmarks they want.
+					</li>
+					<li>
+						<i>Splash and Onboarding page</i>: intro of app to first time users.
+					</li>
+					<li>
+						<i>Directions function</i> using Google / Apple Maps API
+					</li>
+				</ol>
+
+				<p>Below is a small demo of XPlore UCSD</p>
+				<video width="320" height="240" controls>
+  					<source src="https://drive.google.com/drive/folders/1sNplRigc7LB2OkFx6NbSM4yPsF9ZbBie" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</section>
 		</main>
 	</body>
 </html>
