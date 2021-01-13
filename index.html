@@ -11,7 +11,7 @@
 			<p>Welcome to my userpage again! This time it's in html!</p>
 			<p>Want to checkout my first userpage in Markdown? <a href="https://sharpcr0109.github.io/" target="_blank">Here it is!</a></p>
 
-			<iframe src="https://sharpcr0109.github.io/" title="my github page in Markdown" height="500" width="1000"></iframe>
+			<iframe src="https://sharpcr0109.github.io/" title="my github page in Markdown" height="250" width="500"></iframe>
 
 			<section>
 				<header>
@@ -70,6 +70,50 @@
 					<img src="ucsd.png" alt="Logo of UCSD" height="100">
 				</div>
 
+				<table width="500">
+					<caption><strong>Some courses I took:</strong></caption>
+
+					<colgroup>
+					    <col span="1" style="background-color:green">
+					    <col span="1" style="background-color:red">
+					    <col style="background-color:yellow">
+					</colgroup>
+					<tr>
+				    	<th>Course Number</th>
+				    	<th>About</th> 
+				    	<th>Grade</th>
+				  	</tr>
+				  	<tr>
+				    	<td>CSE 11</td>
+				    	<td>Intr/Computer Sci&Obj-Ori:Java</td>
+				    	<td>A+</td>
+				  	</tr>
+				  	<tr>
+				    	<td>CSE 12</td>
+				    	<td>asic Data Struct & OO Design</td>
+				    	<td>A+</td>
+				  	</tr>
+				  	<tr>
+				    	<td>CSE 30</td>
+				    	<td>Computer Organiz&Systms Progrm</td>
+				    	<td>A+</td>
+				  	</tr>
+
+				  	<tr>
+				    	<td>CSE 100</td>
+				    	<td>Advanced Data Structures</td>
+				    	<td>A+</td>
+				  	</tr>
+
+				  	<tr>
+				    	<td>CSE 105</td>
+				    	<td>Theory of Computation</td>
+				    	<td>A+</td>
+				  	</tr>
+				</table>
+
+
+
 				<footer>
 					<strong>Go Tritons!</strong>
 				</footer>
@@ -86,23 +130,30 @@
 					<h3>XPlore UCSD</h3>
 				</header>
 
-				<pre>
+				<picture>
+					<source media="(min-width:650px)" srcset="xplore.png">
+					<source media="(min-width:450px)" srcset="ucsd.png">
+					<img src="xplore.png" alt="Logo of XPlore UCSD" width="100">		
+				</picture>
+
+				<br><br>
+
+				<details>
+  					<summary>Description</summary>
+					<pre>
 Your personal virtual tour guide for visiting the UC san Diego Campus.<br>
 XPlore UCSD is a mobile application that aims to provide a pleasant, <br>
 easy-to-use, and highly customizable guided touring experience for all tourists <br>
 and prospective students visiting the UC San Diego campus.
-				</pre>
+					</pre>
+				</details>
+
+				<br><br>
 
 				<nav>
 					<a href="https://apple.co/31RMWDK" target="_blank">XPlore UCSD on App Store</a> |
 					<a href="https://bit.ly/XploreUCSD" target="_blank">XPlore UCSD on Google Play</a>
 				</nav>
-
-				<picture>
-					<source media="(min-width:650px)" srcset="xplore.png">
-					<source media="(min-width:450px)" srcset="ucsd.png">
-					<img src="xplore.png" alt="Logo of XPlore UCSD" width="100">						
-				</picture>
 
 				<p>
 					Using <code><b>SwiftUI</b></code> and <code><b>Android Studio</b></code>, I implemented:
@@ -124,12 +175,145 @@ and prospective students visiting the UC San Diego campus.
 					</li>
 				</ol>
 
-				<p>Below is a small demo of XPlore UCSD</p>
-				<video width="320" height="240" controls>
-  					<source src="https://drive.google.com/drive/folders/1sNplRigc7LB2OkFx6NbSM4yPsF9ZbBie" type="video/mp4">
+				<h3>
+					Demo for XPlore UCSD
+				</h3>
+				<svg width="100" height="100">
+  					<circle r="40" stroke="yellow" stroke-width="10" fill="blue" />
+				</svg>
+				<p><strong>Video</strong></p>
+				<video width="240" height="360" controls>
+  					<source src="xploredemo.MP4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
+
+				<canvas id="myCanvas" width="100" height="100"></canvas>
+
+				
+				<p>It Also features <strong>audio description</strong> for landmarks!</p>
+				<p>Checkout the audio for 64 Degrees!</p>
+				<video width="240" height="50" controls>
+  					<source src="64_Degrees.mp3" type="audio/mp3">
+					Your browser does not support the video tag.
+				</video>
+
 			</section>
+
+			<hr>
+
+			<section>
+				<header>
+					<h2>Some Feedback and Some Questions!</h2>
+				</header>
+
+				<p>Any feedback? Feel free to fill out the form below so I can know!</p>
+
+				<form>
+					<fieldset>
+						<legend>About you:</legend>
+					 	<label for="fname">First name:</label><br>
+					 	<input type="text" id="fname" name="fname"><br>
+					 	<label for="lname">Last name:</label><br>
+					  	<input type="text" id="lname" name="lname">
+					  	<br><br>
+					  	<input type="radio" id="male" name="gender" value="male">
+					 	<label for="male">Male</label><br>
+					  	<input type="radio" id="female" name="gender" value="female">
+					  	<label for="female">Female</label><br>
+					  	<input type="radio" id="other" name="gender" value="other">
+					  	<label for="other">Other</label>
+					  	<br>
+					  	<input type="reset">
+
+					  	<br><br>
+					  	<p>Which browsers do you like the most?</p>
+					  	<input type="checkbox" id="br1" name="Chrome" value="Chrome">
+						<label for="br1"> Chrome </label><br>
+						<input type="checkbox" id="br2" name="Safari" value="Safari">
+						<label for="br2"> Safari </label><br>
+						<input type="checkbox" id="br3" name="Mozilla" value="Mozilla">
+						<label for="br3"> Mozilla </label><br>
+
+						<br><br>
+
+						<label for="favcolor">Your favorite color?</label>
+  						<input type="color" id="favcolor" name="favcolor">
+
+  						<br><br>
+  						<label for="num">Your favourite number?</label>
+					  	<input type="number" id="num" name="num" min="1" max="1000000">
+
+					  	<br><br>
+					  	<label for="personalWeb">Maybe share your website?</label>
+					  	<input type="url" id="personalWeb" name="personalWeb">
+
+					  	<br><br>
+					  	<label for="email">Maybe share your Email?</label>
+					  	<input type="email" id="email" name="email">
+
+					  	<br><br>
+					  	<label for="birthday">Maybe share your birthday?</label>
+					  	<input type="date" id="birthday" name="birthday">
+
+						<br><br>
+					  	<label for="phone">Maybe share your phone number?</label>
+					  	<input type="tel" id="phone" name="phone">
+
+					</fieldset>
+
+				  	<br><br>
+
+				  	<fieldset>
+				  		<legend>About this website:</legend>
+				  		<label for="favouritePart">What part do you think is the best in this website?</label>
+						<select name="favouritePart" id="favouritePart">
+				    		<optgroup label="Sections">
+				      			<option value="Introduction">Introduction</option>
+				      			<option value="Education Background">Education Background</option>
+				      			<option value="Project">Project</option>
+							</optgroup>
+  						</select>
+  						<br><br>
+  						<label for="feedbackText">Any specific feedback?</label>
+  						<br>
+						<textarea id="feedbackText" name="feedbackText" rows="4" cols="50">
+  							Edit here!
+  						</textarea>
+  						<br><br>
+  						<label for="lookgood">Does this website look good to you?</label>
+					  	<input list="yesorno" name="lookgood" id="lookgood">
+					  	<datalist id="yesorno">
+					    	<option value="Yes!">
+					    	<option value="Hmm, just so so">
+					    	<option value="Still need some polishing...">
+					  	</datalist>
+					  	<br><br>
+					  	<p>Have you checked out XPlore UCSD?</p>
+					  	<input type="button" onclick="alert('Thanks for looking!')" value="Yes">
+
+					  	<br><br>
+					  	<label for="rate">On scale of 5, how would you rate XPlore UCSD?</label>
+					  	<input type="range" id="rate" name="rate" min="0" max="5">
+				  	</fieldset>
+				</form>
+			</section>
+
+			<button onclick="showContent()">Show the hidden thank-you note</button>
+
+			<br><br>
+			
+			<template>
+			  	<h2>Thanks for browsing my website!</h2>
+			  	<img src="thankyou.jpg" width="200">
+			</template>
+
+			<script>
+				function showContent() {
+			  		var temp = document.getElementsByTagName("template")[0];
+			  		var clon = temp.content.cloneNode(true);
+			  		document.body.appendChild(clon);
+				}
+			</script>
 		</main>
 	</body>
 </html>
