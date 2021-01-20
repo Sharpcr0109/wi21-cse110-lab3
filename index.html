@@ -5,6 +5,8 @@
 		<title>Rui Cai's Github user page</title>
 		<link href="style/style.css" rel="stylesheet">
 		<link rel="icon" type="image/png" sizes="16x16" href="ruicai.png">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Roboto:wght@100&display=swap" rel="stylesheet">
 		<style>
 			body {
 			  background-color: white;
@@ -16,7 +18,7 @@
 		<main>
 			<h1 class="mainHeader">Rui Cai's Github Userpage!</h1>
 			<p id="secondLine">Welcome to my userpage again! This time it's in html!</p>
-			<p>Want to checkout my first userpage in Markdown? <a href="https://sharpcr0109.github.io/" target="_blank">Here it is!</a></p>
+			<p id="userpageInMarkdown">Want to checkout my first userpage in Markdown? <a href="https://sharpcr0109.github.io/" target="_blank">Here it is!</a></p>
 
 			<iframe class="webFrame" src="https://sharpcr0109.github.io/" title="my github page in Markdown" ></iframe>
 
@@ -25,6 +27,7 @@
 					<h2>
 						Introduction
 					</h2>
+					<p id="none">you can't see me!</p>
 				</header>
 
 				<figure>
@@ -168,17 +171,17 @@ and prospective students visiting the UC San Diego campus.
 				</p>
 
 				<ol id="dutyDescription">
-					<li>
+					<li id="item1">
 						<i>Tour page</i>: Users can plan the stops for any tours; users can go front and back to any stops they want
 						within the page, and the page updates itself with corresponding info; link backend JSON files of preset tours to UI; built-in audio player and texts for introduction to the stops.
 					</li>
-					<li>
+					<li id="item2">
 						<i>Search page</i>: users can search using my customized algorithm based on name or amenities filter to get the landmarks they want.
 					</li>
-					<li>
+					<li id="item3">
 						<i>Splash and Onboarding page</i>: intro of app to first time users.
 					</li>
-					<li>
+					<li id="item4">
 						<i>Directions function</i> using Google / Apple Maps API
 					</li>
 				</ol>
@@ -216,7 +219,7 @@ and prospective students visiting the UC San Diego campus.
 
 				<p>Any feedback? Feel free to fill out the form below so I can know!</p>
 
-				<form>
+				<form id="form">
 					<fieldset>
 						<legend>About you:</legend>
 					 	<label for="fname">First name:</label><br>
@@ -269,7 +272,7 @@ and prospective students visiting the UC San Diego campus.
 
 					</fieldset>
 
-				  	<br><br>
+				  	
 
 				  	<fieldset>
 				  		<legend>About this website:</legend>
